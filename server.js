@@ -1,0 +1,12 @@
+const express = require('express');
+let app = express();
+
+app.use(express.static(_dirname + '/public'));
+
+app.get('/', function (req, res) {
+  res.send('index');
+});
+
+let server = app.listen(3000, function() {
+  console.log('Listening to port', server.address().port);
+});
