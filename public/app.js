@@ -1,7 +1,7 @@
 $(document).ready(() => {
 // Get all the keys from document
 const keys = document.querySelectorAll('#calculator span');
-const operators = ['+', '-', 'x', '÷'];
+const operators = ['+', '-', '*', '÷'];
 let decimalAdded = false;
 
 // Add onclick event to all the keys and perform operations
